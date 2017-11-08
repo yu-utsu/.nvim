@@ -1,0 +1,89 @@
+# STATIC vim plugins list
+
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+[[plugins]]
+repo = 'Shougo/vimproc.vim'
+hook_post_update = '''
+    let g:dein#plugin.build = 'make'
+'''
+
+[[plugins]]
+repo = 'Shougo/neosnippet.vim'
+hook_add = '''
+  imap <C-k>     <Plug>(neosnippet_expand_or_jump)
+  smap <C-k>     <Plug>(neosnippet_expand_or_jump)
+  xmap <C-k>     <Plug>(neosnippet_expand_target)
+
+  if has('conceal')
+    set conceallevel=2 concealcursor=i
+  endif
+'''
+
+[[plugins]]
+repo = 'Shougo/neosnippet-snippets'
+
+[[plugins]]
+repo = 'Shougo/denite.nvim'
+
+[[plugins]]
+repo = 'Townk/vim-autoclose'
+
+[[plugins]]
+repo = 'tpope/vim-endwise'
+
+[[plugins]]
+repo = 'Yggdroot/indentLine'
+
+[[plugins]]
+repo = 'tpope/vim-surround'
+
+[[plugins]]
+repo = 'cespare/vim-toml'
+
+[[plugins]]
+repo = 'thinca/vim-ref'
+
+[[plugins]]
+repo = 'vim-jp/autofmt'
+
+[[plugins]]
+repo = 'bronson/vim-trailing-whitespace'
+
+#[[plugins]]
+#repo = 'rhysd/accelerated-jk'
+#hook_add = '''
+#  nmap j <Plug>(accelerated_jk_gj)
+#  nmap k <Plug>(accelerated_jk_gk)
+#'''
+
+[[plugins]]
+repo = 'tyru/caw.vim'
+
+#[[plugins]]
+#repo = 'vim-airline/vim-airline'
+#hook_add = '''
+#  let g:airline_powerline_fonts = 1
+#  let g:airline_theme = 'dark'
+#  set noshowmode
+#'''
+
+#[[plugins]]
+#repo = 'vim-airline/vim-airline-themes'
+
+[[plugins]]
+repo = 'itchyny/lightline.vim'
+
+[[plugins]]
+repo = 'cocopon/lightline-hybrid.vim'
+depends = ['lightline.vim']
+
+[[plugins]]
+repo = 'vim-scripts/sudo.vim'
+
+[[plugins]]
+repo = 'airblade/vim-gitgutter'
+
+#[[plugins]]
+#repo = 'KabbAmine/vCoolor.vim'

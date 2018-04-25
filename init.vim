@@ -6,6 +6,8 @@ set nocompatible
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+source $HOME/colemak/vimremap.vim
+
 if $XDG_CONFIG_HOME != ""
   " Plugin's directories
   let s:dein_dir      = expand('$XDG_CONFIG_HOME/nvim/dein.vim')
@@ -52,7 +54,7 @@ set cursorline
 set encoding=utf-8
 set expandtab
 set fileformats=unix
-set fileencodings=ucs-bom,iso-2022-jp,iso-2022-jp-3,utf-8,sjis,cp932,euc-jp,eucjp-ms,euc-jisx0213,cp20932
+set fileencodings=ucs-bom,iso-2022-jp,iso-2022-jp-3,sjis,cp932,euc-jp,eucjp-ms,euc-jisx0213,cp20932,utf-8
 set formatexpr=autofmt#japanese#formatexpr()
 set formatoptions+=mM
 set helplang=ja,en
